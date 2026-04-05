@@ -3,8 +3,31 @@
 <head>
   <title>SmartConvert Pro</title>
 </head>
-<body style="background:black; color:white; text-align:center; margin-top:100px;">
+<body style="background:black; color:white; text-align:center; font-family:sans-serif;">
+
   <h1>🚀 SmartConvert Pro</h1>
   <p>Your AI SaaS is LIVE 🔥</p>
+
+  <h2>Text Converter</h2>
+
+  <textarea id="input" placeholder="Type something..." style="width:80%; height:100px;"></textarea><br><br>
+
+  <button onclick="toUpper()">UPPERCASE</button>
+  <button onclick="toLower()">lowercase</button>
+
+  <h3 id="output"></h3>
+
+  <script>
+    function toUpper() {
+      let text = document.getElementById("input").value;
+      document.getElementById("output").innerText = text.toUpperCase();
+    }
+
+    function toLower() {
+      let text = document.getElementById("input").value;
+      document.getElementById("output").innerText = text.toLowerCase();
+    }
+  </script>
+
 </body>
 </html>
